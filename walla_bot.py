@@ -20,6 +20,7 @@ import logging
 
 COOKIES_FILE = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\chatbot\walla_chat\cookies_new.pkl'
 PRODUCTS_FILE = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\walla_bot\prods.json'
+PRODUCTS_FILE = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\walla_bot\prods.json'
 
 def login_cookies(d, COOKIES_FILE):
     ''' d, COOKIES_FILE '''
@@ -71,7 +72,7 @@ def set_driver():
     d = uc.Chrome(options=options)
     d.maximize_window()
     
-    print('driver set')
+    print(f'driver set. Session id: {d.session_id}')
     return d
 
 def login_form(d, email, password):
@@ -172,8 +173,6 @@ def upload_ad(  d,
                 subcategory = 'not needed'
                 ):
 
-    global total_published_ads
-
     try:
         # if driver not in upload ad page, click in upload new ad
         if d.current_url != 'https://es.wallapop.com/app/catalog/upload' :
@@ -252,77 +251,80 @@ def select_category(d, category, subcategory='not needed'):
 def run():
     global total_published_ads
     d = set_driver()
-    with open('prods.json', encoding='utf8') as f:
-        json_data = json.load(f)
-        # print(f'json data sample: {json_data[1:3]}')
 
-    #get credentials
-    credentials =  json_data[0]
-    logging.info(f'credentials {credentials}')
+    with d:
+        with open('prods.json', encoding='utf8') as f:
+            json_data = json.load(f)
+            # print(f'json data sample: {json_data[1:3]}')
 
-    COOKIES_FILE = credentials.get('login_cookies_file')
-    walla_user =  credentials.get('walla_user')
-    walla_password =  credentials.get('walla_password')
+        #get credentials
+        credentials =  json_data[0]
+        logging.info(f'credentials {credentials}')
 
-    prods_len = len(json_data) #len of all prods, to know when to close the driver
-    print(f'this is json len {prods_len}')
+        COOKIES_FILE = credentials.get('login_cookies_file')
+        walla_user =  credentials.get('walla_user')
+        walla_password =  credentials.get('walla_password')
+        prod_location =  credentials.get('prod_location')
 
-    # print('this are the credentials',
-                # COOKIES_FILE,'\n',
-                # walla_user, 
-                # walla_password)
+        prods_len = len(json_data) #len of all prods, to know when to close the driver
+        print(f'this is json len {prods_len}')
 
-    result = login_cookies(d, COOKIES_FILE)
-    if result == 'login error':
-        try:
-            print('loging error! trying login form')
-            login_form(d) #login manually filling email and password and bypassing captcha.
-        except:
-            print('Could not login, program closed')
-            return
+        # print('this are the credentials',
+        #             'COOKIES_FILE:', COOKIES_FILE,'\n',
+        #             'walla_user:', walla_user, 
+        #             'walla_password:', walla_password,
+        #             'prod_location:', prod_location )
 
-    total_published_ads = 0
-    for prod in json_data[1:]: #avoid the 1º where the credentials are
-        try:
-            #read json with products to upload
-            #for prod in products:
-            prod_title = prod.get('wallapop_title')
-            prod_state = prod.get('prod_state')
-            prod_description = prod.get('ad_text')
-            price = prod.get('selling_price')
-            prod_brand = prod.get('prod_brand')
-            prod_model = prod.get('prod_model')
-            location = prod.get('location')
-            pics = prod.get('pics')
-            category = prod.get('category')
+        result = login_cookies(d, COOKIES_FILE)
+        if result == 'login error':
+            try:
+                print('loging error! trying login form')
+                login_form(d) #login manually filling email and password and bypassing captcha.
+            except:
+                print('Could not login, program closed')
+                return
 
-            print(f'prod_title {prod_title} \n, prod_state {prod_state} \n, prod_description {prod_description} \n, price {price} \n, prod_brand {prod_brand} \n, prod_model {prod_model} \n, location {location} \n, pics {pics} \n, category')
+        total_published_ads = 0
+        for prod in json_data[1:]: #avoid the 1º where the credentials are
+            try:
+                #read json with products to upload
+                #for prod in products:
+                prod_title = prod.get('wallapop_title')
+                prod_state = prod.get('prod_state')
+                prod_description = prod.get('ad_text')
+                price = prod.get('selling_price')
+                prod_brand = prod.get('prod_brand')
+                prod_model = prod.get('prod_model')
+                location = prod.get('location')
+                pics = prod.get('pics')
+                category = prod.get('category')
 
-            result = upload_ad(d,prod_title = prod_title,
-                                prod_state = prod_state,
-                                prod_description = prod_description,
-                                price = price,
-                                prod_brand = prod_brand,
-                                location = location,
-                                pics = pics,
-                                prod_model = prod_model,
-                                category = category
-                                )
-            
-            #errors are handled inside upload_ad()
-            if result == 'uploading error':
+                print(f'prod_title {prod_title} \n, prod_state {prod_state} \n, prod_description {prod_description} \n, price {price} \n, prod_brand {prod_brand} \n, prod_model {prod_model} \n, location {location} \n, pics {pics} \n, category')
+
+                result = upload_ad(d,prod_title = prod_title,
+                                    prod_state = prod_state,
+                                    prod_description = prod_description,
+                                    price = price,
+                                    prod_brand = prod_brand,
+                                    location = location,
+                                    pics = pics,
+                                    prod_model = prod_model,
+                                    category = category
+                                    )
+
+                #errors are handled inside upload_ad()
+                if result == 'uploading error':
+                    continue
+                elif result == 'success':
+                    total_published_ads += 1
+                    print(f'total published ads: {total_published_ads} of {prods_len} total // new ad published: {prod_title}')
+
+            except Exception as e:
+                print(f'error in loop uploading prods prod_title: {prod_title}, error message: \n {e}')
                 continue
-            elif result == 'success':
-                total_published_ads += 1
-                print(f'total published ads: {total_published_ads} of {prods_len} total // new ad published: {prod_title}')
-
-
-        except Exception as e:
-            print(f'error in loop uploading prods prod_title: {prod_title}, error message: \n {e}')
-            continue
-    
-    print(f'published all ads: {total_published_ads}, driver closed')           
-    d.close()
+            
+        print(f'published all ads: {total_published_ads}, driver closed')           
+        d.close()
 
     
 
