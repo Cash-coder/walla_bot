@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 #wallapop es como Amazon, se vende de todo: https://es.wallapop.com/app/user/oferta-365057118-x6qkp0vwgq6y/reviews
 #busca algunos de sus productos con b´suqueda por imágen ?
 import json
@@ -18,9 +17,16 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import logging
 
+# load prods from ADS_DB
+#for city in cities:
+    #try login cookies
+    #else: login google, then walla with google
+    #for product in products
+        #upload prod
+
 COOKIES_FILE = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\chatbot\walla_chat\cookies_new.pkl'
-PRODUCTS_FILE = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\walla_bot\prods.json'
-PRODUCTS_FILE = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\walla_bot\prods.json'
+# PRODUCTS_FILE = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\walla_bot\prods.json'
+PRODS_FILE = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\sm_sys_folder\ADS_DB.xslx'
 
 def login_cookies(d, COOKIES_FILE):
     ''' d, COOKIES_FILE '''
@@ -29,9 +35,10 @@ def login_cookies(d, COOKIES_FILE):
         logging.info(f'using COOKIES_FILE: {COOKIES_FILE}')
         d.get('https://es.wallapop.com/')
         cookies = pickle.load(open(COOKIES_FILE, "rb"))
+        print(f' this is cookies_file: {COOKIES_FILE}')
         for cookie in cookies:
             if cookie['domain'] == '.wallapop.com':
-                logging.info(f'added this cookie: {cookie}')
+                print(f'added this cookie: {cookie}')
                 d.add_cookie(cookie)
         sleep(1)
         d.get('https://es.wallapop.com/app/catalog/upload')
@@ -75,7 +82,8 @@ def set_driver():
     print(f'driver set. Session id: {d.session_id}')
     return d
 
-def login_form(d, email, password):
+def login_google_walla(d, email, password, city_name):
+    #save_cookies(COOKIES_FILE=city_name)
     pass
 
 def my_click(d, xpath): 
@@ -110,8 +118,6 @@ def type_text(d, text, xpath, end='unspecified'):
         element.send_keys(Keys.TAB)
     elif end == 'enter':
         element.send_keys(Keys.ENTER)
-
-
 
 def select_prod_state(d, prod_state):
     ''' d , prod_state'''
@@ -214,7 +220,7 @@ def upload_ad(  d,
         my_click(d , '//div[@class="modal-close light"]')
         
         # '//tsl-svg-icon[@src="/assets/icons/cross.svg"]'
-
+        sleep(5)
         try:
             success_text = d.find_element(By.XPATH, '//h1[contains(text(), "¡Genial! Tu producto ya está en Wallapop")]').text
             # success_text_xpath = '//h1[contains(text(), "¡Genial! Tu producto ya está en Wallapop")]'
@@ -247,6 +253,11 @@ def select_category(d, category, subcategory='not needed'):
         my_click(d, '//tsl-dropdown[@placeholder="Subcategoría"]')
         my_click(d, '//span[contains(text(), "Teléfonos móviles")]')
 
+def load_prods(prods_file):
+    pass
+
+def get_cookies_filepath(city):
+    pass
 
 def run():
     global total_published_ads
@@ -279,7 +290,7 @@ def run():
         if result == 'login error':
             try:
                 print('loging error! trying login form')
-                login_form(d) #login manually filling email and password and bypassing captcha.
+                login_google_walla(d) #login manually filling email and password and bypassing captcha.
             except:
                 print('Could not login, program closed')
                 return
@@ -314,10 +325,11 @@ def run():
 
                 #errors are handled inside upload_ad()
                 if result == 'uploading error':
+                    print('uploading error')
                     continue
                 elif result == 'success':
                     total_published_ads += 1
-                    print(f'total published ads: {total_published_ads} of {prods_len} total // new ad published: {prod_title}')
+                    print(f'total successful published ads: {total_published_ads} of {prods_len} total // new ad published: {prod_title}')
 
             except Exception as e:
                 print(f'error in loop uploading prods prod_title: {prod_title}, error message: \n {e}')
