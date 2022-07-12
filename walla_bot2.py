@@ -29,6 +29,7 @@ import logging
     #for product in products
         #upload prod
 
+
 # COOKIES_FILE =   r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\chatbot\walla_chat\cookies_new.pkl'
 COOKIES_FOLDER = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\walla_bot\cookies_folder'
 # PRODUCTS_FILE = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\walla_bot\prods.json'
@@ -209,7 +210,7 @@ def set_driver():
     # n_proxy +=1
     # print(f'{NEXT_IP}:{HTTPS_PORT}')
     
-    executable_path=r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\chromedriver.exe'
+    EXECUTABLE_PATH = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\login and launcher\chromedriver.exe'
 
     options = uc.ChromeOptions()
     # options.add_argument(f'--proxy-server=socks5://{NEXT_IP}:{SOCKS5_PORT}')
@@ -218,7 +219,7 @@ def set_driver():
     # options.add_argument(f'--proxy-server=https://{NEXT_IP}:{HTTPS_PORT}')
     # options.add_argument('ignore-certificate-errors')
 
-    d = uc.Chrome(executable_path=executable_path,options=options)
+    d = uc.Chrome(executable_path= EXECUTABLE_PATH, options= options)
     # d = uc.Chrome(options=options)
     d.set_page_load_timeout(15) #sometimes takes too long to load a page, used with timeout excpetion to reload the page
     d.maximize_window()
