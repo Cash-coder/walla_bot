@@ -107,31 +107,6 @@ def type_text(d, text, xpath, end_with='unspecified'):
     elif end_with == 'enter':
         element.send_keys(Keys.RETURN)
 
-def select_category(d, category, subcategory):
-    
-    #click in category drop down
-    my_click(d, '//tsl-dropdown[@id="category"]')
-    sleep(2)
-
-    #in the dropdown menu click element that has text from category parameter
-    my_click(d, f'//div[contains(text(), "{category}")]')
-    sleep(2)
-    
-    #same for subcategory parameter
-    my_click(d, f'//span[contains(text(), "{subcategory}")]')
-    sleep(2)
-
-def select_prod_state(d, prod_state):
-    
-    #click in prod state dropdown
-    my_click(d, '//tsl-dropdown[@id="conditions"]')
-    sleep(2)
-
-    # click in dropdown element that matches target prod_state
-    my_click(d, f'//li[contains(text(), "{prod_state}")]')
-    sleep(2)
-    
-
 def upload_ad(ad_data, d):
 
     # unpack ad_data
@@ -156,8 +131,6 @@ def upload_ad(ad_data, d):
     my_click(d, '//span[contains(text(), "Algo que ya no necesito")]')
     sleep(3)
 
-    # type prod title
-    type_text(d, title ,'//input[@id="headline"]')
 
 
 def run():
@@ -176,5 +149,3 @@ def run():
 
 if __name__ == "__main__":
     run()
-# Consolas y Videojuegos
-# Videojuegos
