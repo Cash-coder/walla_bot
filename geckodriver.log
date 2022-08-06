@@ -1,0 +1,89 @@
+1658327526765	geckodriver	INFO	Listening on 127.0.0.1:51975
+1658327529839	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HPELIT~1\\AppData\\Local\\Temp\\rust_mozprofileYxabOh"
+1658327530182	Marionette	INFO	Marionette enabled
+1658327530187	Marionette	INFO	Listening on port 51984
+WebDriver BiDi listening on ws://localhost:9222
+Read port: 51984
+1658327530352	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\HPELIT~1\\AppData\\Local\\Temp\\rust_mozprofileYxabOh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9222/devtools/browser/eb608edd-9aed-4cdd-81fb-ebf5ef1b7031
+1658327653726	Marionette	INFO	Stopped listening on port 51984
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1658332315139	geckodriver	INFO	Listening on 127.0.0.1:30936
+1658332318220	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HPELIT~1\\AppData\\Local\\Temp\\rust_mozprofile2V4Sb0"
+1658332318498	Marionette	INFO	Marionette enabled
+1658332318501	Marionette	INFO	Listening on port 30945
+WebDriver BiDi listening on ws://localhost:9222
+Read port: 30945
+1658332318634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\HPELIT~1\\AppData\\Local\\Temp\\rust_mozprofile2V4Sb0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9222/devtools/browser/3be1aa4b-394a-479d-b976-ffeeadcf461b
+JavaScript error: https://eus.rubiconproject.com/usync.js, line 4: SecurityError: The operation is insecure.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Jb5du1wVqba4or3nurh6HQr9svaNG92rNWcoGauPISE.js line 2 > eval line 565 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.shopify.com/s/files/1/1566/2889/t/53/assets/theme.js?v=54198213268589535891644250907, line 1316: unreachable code after return statement
+JavaScript warning: https://clear.wallapop.com/jtR-gtvfvkz_f_kq?242f1673205bce16=HmzuRH4Q4M73sGiqe7ZZgNE3aHKpLj066tckC1YN_cVDGFRHUUdk4AYkXtSv3GXy8_awCFzFiWhzbMI0xA3hUwFL6pEdkxAPqpu915JhO_gN-njXY6fx6TNVHPeaVUBqhVgWHzm47IHIRQpSYWWBJ48ynI87zka-Zbkmzct4PqGsI6VesDUYFJyo_PvYEEf17dkfn7mNNz1jik2C&jb=363126266a736f7735576b6e6467777324687b6d3f556b66666f7571253230313224627b62753d46697265646778246a736a3d466b706d646d7a273a32313230, line 385: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://es.wallapop.com"
+JavaScript error: , line 0: uncaught exception: Timeout
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://es.wallapop.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658332656408	Marionette	INFO	Stopped listening on port 30945
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1658332665757	geckodriver	INFO	Listening on 127.0.0.1:24578
+1658332668810	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HPELIT~1\\AppData\\Local\\Temp\\rust_mozprofiledbwqQS"
+1658332669088	Marionette	INFO	Marionette enabled
+1658332669092	Marionette	INFO	Listening on port 24587
+WebDriver BiDi listening on ws://localhost:9222
+Read port: 24587
+1658332669225	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\HPELIT~1\\AppData\\Local\\Temp\\rust_mozprofiledbwqQS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9222/devtools/browser/8337351a-b3d9-4d10-8345-3730b2e45848
+JavaScript error: https://eus.rubiconproject.com/usync.js, line 4: SecurityError: The operation is insecure.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Jb5du1wVqba4or3nurh6HQr9svaNG92rNWcoGauPISE.js line 2 > eval line 1549 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.firefox.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.firefox.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.firefox.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658332847524	FirefoxAccounts	ERROR	FxA rejecting with error UNVERIFIED_ACCOUNT, details: undefined
+1658332847524	FirefoxAccounts	ERROR	Background refresh of initial profile failed: Error: UNVERIFIED_ACCOUNT(resource://gre/modules/FxAccounts.jsm:1530:18) JS Stack trace: _error@FxAccounts.jsm:1530:18
+withSessionToken@FxAccounts.jsm:789:18
+console.info: "Skipping device list refresh; not signed in"
+1658332847525	FirefoxAccounts	ERROR	FxA rejecting with error UNVERIFIED_ACCOUNT, details: undefined
+1658332847525	FirefoxAccounts	ERROR	Background refresh of initial profile failed: Error: UNVERIFIED_ACCOUNT(resource://gre/modules/FxAccounts.jsm:1530:18) JS Stack trace: _error@FxAccounts.jsm:1530:18
+withSessionToken@FxAccounts.jsm:789:18
+1658332848300	FirefoxAccounts	ERROR	FxA rejecting with error UNVERIFIED_ACCOUNT, details: undefined
+1658332848301	FirefoxAccounts	ERROR	Background refresh of initial profile failed: Error: UNVERIFIED_ACCOUNT(resource://gre/modules/FxAccounts.jsm:1530:18) JS Stack trace: _error@FxAccounts.jsm:1530:18
+withSessionToken@FxAccounts.jsm:789:18
+1658332848302	FirefoxAccounts	ERROR	FxA rejecting with error UNVERIFIED_ACCOUNT, details: undefined
+1658332848303	FirefoxAccounts	ERROR	Background refresh of initial profile failed: Error: UNVERIFIED_ACCOUNT(resource://gre/modules/FxAccounts.jsm:1530:18) JS Stack trace: _error@FxAccounts.jsm:1530:18
+withSessionToken@FxAccounts.jsm:789:18
+1658332848303	FirefoxAccounts	ERROR	Background refresh of initial profile failed: Error: UNVERIFIED_ACCOUNT(resource://gre/modules/FxAccounts.jsm:1530:18) JS Stack trace: _error@FxAccounts.jsm:1530:18
+withSessionToken@FxAccounts.jsm:789:18
+console.info: "Skipping device list refresh; not signed in"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.firefox.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://eus.rubiconproject.com/usync.js, line 4: SecurityError: The operation is insecure.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Jb5du1wVqba4or3nurh6HQr9svaNG92rNWcoGauPISE.js line 2 > eval line 6526 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1658332896165	Marionette	INFO	Stopped listening on port 24587
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1658332900321	geckodriver	INFO	Listening on 127.0.0.1:24832
+1658332903384	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HPELIT~1\\AppData\\Local\\Temp\\rust_mozprofile3p9t71"
+1658332903691	Marionette	INFO	Marionette enabled
+1658332903696	Marionette	INFO	Listening on port 24841
+WebDriver BiDi listening on ws://localhost:9222
+Read port: 24841
+1658332903827	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\HPELIT~1\\AppData\\Local\\Temp\\rust_mozprofile3p9t71\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9222/devtools/browser/ab7cf214-52b7-42d9-b1b6-a5acf4b88df1
+1658332931048	Marionette	INFO	Stopped listening on port 24841
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1658333158785	geckodriver	INFO	Listening on 127.0.0.1:24914
+1658333161841	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HPELIT~1\\AppData\\Local\\Temp\\rust_mozprofileYr0vKS"
+1658333162119	Marionette	INFO	Marionette enabled
+1658333162123	Marionette	INFO	Listening on port 24923
+WebDriver BiDi listening on ws://localhost:9222
+Read port: 24923
+1658333162257	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\HPELIT~1\\AppData\\Local\\Temp\\rust_mozprofileYr0vKS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:9222/devtools/browser/f2d3466a-3b2f-4e5c-b93b-6deb0eb7f099
+1658333187779	Marionette	INFO	Stopped listening on port 24923
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
