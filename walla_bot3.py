@@ -18,7 +18,7 @@ EXECUTABLE_PATH = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code
 SITE_URL        = 'https://es.wallapop.com/'
 COOKIES_FOLDER  = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\login and launcher\cookies_folder'
 BACKUPS_FOLDER  = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\login and launcher\cookies_folder\backups'
-PROXY_DATA      = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\login and launcher'
+PROXY_DATA      = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\login and launcher\proxy_data.py'
 
 
 #walla_ads_file.xlsx
@@ -37,17 +37,29 @@ MODEL_COL=      11
 
 
 # import py file with proxy data from another folder
-def import_proxy_data():
-    import sys
-    sys.path.insert(0, PROXY_DATA)
-    import proxy_data
-    return proxy_data
+def importDataFrom(fileName, filePath):
+    '''fileName has to include extension like.py 
+    filePath has to include filename with extension at the end'''
+    
+    from importlib.machinery import SourceFileLoader
+    module = SourceFileLoader(fileName, filePath).load_module()
+
+    return module
+
+# import py file with proxy data from another folder
+# def import_proxy_data():
+#     import sys
+#     sys.path.insert(0, PROXY_DATA)
+#     import proxy_data
+#     return proxy_data
 
 def set_driver(proxy_n):
+    
     import undetected_chromedriver.v2 as uc
     
-    proxy_data = import_proxy_data()
-
+    # proxy_data = import_proxy_data()
+    proxy_data = importDataFrom('proxy_data.py', PROXY_DATA)
+    
     IP_ENTRY  = proxy_data.IP_DICT[proxy_n]
     IP        = IP_ENTRY.get('ip')
     CITY      = IP_ENTRY.get('city')
@@ -57,6 +69,10 @@ def set_driver(proxy_n):
     options = uc.ChromeOptions()
     options.add_argument(f'--proxy-server=http://{IP}:{HTTPS_PORT}')
     options.add_argument('--no-first-run --no-service-autorun --password-store=basic')
+
+    #problem with google alerts and pop ups that may obscure elements and impede to click
+    # prefs = {"profile.default_content_setting_values.notifications" : 2}
+    # options.add_experimental_option("prefs",prefs)
 
     d = uc.Chrome(executable_path=EXECUTABLE_PATH, options=options)
     d.maximize_window()
@@ -147,6 +163,10 @@ def load_prods(prods_file):
     prod_ads = []
 
     for row in ws.iter_rows(values_only=True, min_row=2):
+
+        if not row[TITLE_COL]:
+            continue
+
         prod_data = {
             'title':   row[TITLE_COL],
             'ad_text': row[AD_TEXT_COL],
@@ -184,6 +204,10 @@ def my_click(d, xpath):
         wait.until(EC.visibility_of_element_located)
 
         target.click()
+
+        #ADVICE: sometimes you can avoid interception error 
+        #by sending key RETURN instead of clicking d.xpath.send_keys(Keys.RETURN)
+
         #Action chains has little accuracy, lots of mistakes clicking in the wrong plage
         # actions = ActionChains(d)
         # actions.move_to_element(target).click().perform()
@@ -196,7 +220,6 @@ def my_click(d, xpath):
         except Exception as e:
             #print(e)
             print("can't switch to active element")
-        
     except Exception as e:
         print(e)
 
@@ -236,6 +259,8 @@ def type_text(d, text, xpath, sleep_time, end_with='unspecified'):
         element.send_keys(Keys.TAB)
     elif end_with == 'enter':
         element.send_keys(Keys.RETURN)
+    elif end_with == 'escape':
+        element.send_keys(Keys.ESCAPE)
 
 # chromedriver doesn't support emojies, so you use pyperclip to copy text to clipboard? and then Control+V in the selected element to paste
 def type_text_with_emoji(d, text, xpath, sleep_time):
@@ -310,7 +335,7 @@ def insert_pics(d, pic_names, pics_folder):
                 traceback.print_exc()
 
 
-def upload_ad(d, ad_data):
+def upload_ad(d, ad_data, city):
 
     # unpack ad_data
     title=    ad_data.get('title')
@@ -380,9 +405,17 @@ def upload_ad(d, ad_data):
     my_click(d, '//button[@type="submit"]')
 
     sleep(4)
-    #click congratulations banner and button
-    my_click(d, '//button[@class="btn btn-primary btn-primary--bold w-100"]')
+    #check if congratulations banner is present to record the uploaded ad to adsDb
+    congratBanner = '//button[@class="btn btn-primary btn-primary--bold w-100"]'
+    if congratBanner:
+        recordUploadedProd(title, city)
+        
+        #click congratultions banner and button
+        my_click(d, congratBanner)
 
+def recordUploadedProd(title, city):
+    pass
+    'class="info-title subtitle"'
 
 def recordItemNotUploaded(ad, city):
     title = ad.get('title')
@@ -404,7 +437,7 @@ def run():
         for ad in ads_to_upload:
             print('-----------',ad)
             try:
-                upload_ad(d, ad)            
+                upload_ad(d, ad, city)            
             except Exception as e:
                 recordItemNotUploaded(ad, city)
                 print('---------EXCEPTION UPLOADING AN AD!: ', e)
@@ -413,11 +446,8 @@ def run():
                 sleep(8)
                 #refresh page to clean it and start from 0 a new ad
                 d.refresh()
-                
-
+        
         save_cookies(d, city)
-        
-        
         d.close()
 
     # for ad in ads_to_upload:
@@ -433,7 +463,7 @@ def run():
     #         d.close()
             
 
-if __name__ == "__main__":
+if __name__ == "__main__":  
     run()
 # Consolas y Videojuegos
 # Videojuegos
