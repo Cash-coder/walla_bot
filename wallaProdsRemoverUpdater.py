@@ -58,8 +58,8 @@ def DeleteProdRowFromDb(wooId):
 
     mydb.commit()
 
-def checkProdPresenceInProdsDb(prod_name):
-    mydb, myCursor = SetDbConnector()  
+def checkProdPresenceInProdsDb(prod_name, myCursor):
+    # myCursor = SetDbConnector()  
     
     myCursor.execute(f'SELECT wpPrice FROM prods WHERE LOWER(wpTitle) = "{prod_name}"')
     r = myCursor.fetchall()
@@ -112,74 +112,55 @@ def updateWallaProdPrice(d, prod, myCursor):
     #send new price
     priceInput.send_keys(minPrice)
     priceInput.send_keys(Keys.ENTER)
+
+    #signal the prodPrice has been update
+    return True
+
+def updateProd(prod):
     
+    #enter on update button
+    prod.find_element(By.XPATH, '//button[@class="btn-edit ng-star-inserted"]').send_keys(Keys.RETURN)
+    sleep(4)
+
+    #return on prod's page update
+    prod.find_element(By.XPATH, "//span[contains(text(), 'Actualizar')").send_keys(Keys.RETURN)
+
+
 
 def run():
     
     mydb, myCursor = SetDbConnector()  
     
-    d, city = set_driver(2)
-    close_second_tab(d)
-    d = load_cookies(d, city)
-
-    #accept cookies banner
-    my_click(d, '//button[@id="onetrust-accept-btn-handler"]')
-    d.get('https://es.wallapop.com/app/catalog/published')
-    sleep(8) # let prods page to load all prods
-
-    ads = d.find_elements(By.XPATH, '//div[@class="row CatalogItem__content"]')
-    for ad in ads:
-        title = ad.find_element(By.XPATH, './/span[@class="info-title subtitle"]').text.lower()
-        price = ad.find_element(By.XPATH, './/span[@class="info-price"]').text.replace('€', '')
-        #if prod is not present in DB
-        if not checkProdPresenceInProdsDb(title):
-            print(f'this prod title is not in the database: {title}')
-            removeProdFromWalla(ad)
-            continue
-
-        updateWallaProdPrice(d, ad, myCursor)
-
-
-    #go to walla prods page
-    #for prodTitle check if it's present in prodsDB
-        #return False if it's missing
-        #return True if it's present
-
-        # if not present: deleteFromWalla
-        # if present: updatePriceinWalla
+    for i in range(3):
+        d, city = set_driver(i)
+        close_second_tab(d)
+        d = load_cookies(d, city)
     
+        #accept cookies banner
+        my_click(d, '//button[@id="onetrust-accept-btn-handler"]')
+        d.get('https://es.wallapop.com/app/catalog/published')
+        sleep(8) # let prods page to load all prods
 
+        ads = d.find_elements(By.XPATH, '//div[@class="row CatalogItem__content"]')
+        for ad in ads:
+            title = ad.find_element(By.XPATH, './/span[@class="info-title subtitle"]').text.lower()
+            
+            #if prod is not present in DB
+            if not checkProdPresenceInProdsDb(title, myCursor):
+                print(f'this prod title is not in the database: {title}')
+                removeProdFromWalla(ad)
+                continue
 
-    # for proxy_n in range(1):
-    #     d, city = set_driver(proxy_n)
-    #     close_second_tab(d)
+            #update prod price, if it has been updated got to the next prod
+            if updateWallaProdPrice(d, ad, myCursor):
+                continue
 
-    #     load_cookies(d, city)
+            #if prod still exists and hasn't changed
+            #update to gain traffic
+            updateProd(ad)
 
-    #d.get(prods_page)
-    #get prods names
-
-    # for prod in prods:
-        # prodTitle = prod.xpath()
-
-        # if not checkProdPresenceInProdsDb(prodTitle):
-            #removeProdFromWalla(d, prod)
-
-    #     for ad in ads_to_upload:
-    #         print('-----------',ad)
-    #         try:
-    #             upload_ad(d, ad, city)            
-    #         except Exception as e:
-    #             recordItemNotUploaded(ad, city)
-    #             print('---------EXCEPTION UPLOADING AN AD!: ', e)
-    #             traceback.print_exc()
-    #             print('going to refresh the page to start a fresh new ad')
-    #             sleep(8)
-    #             #refresh page to clean it and start from 0 a new ad
-    #             d.refresh()
-        
-    #     save_cookies(d, city)
-    #     d.close()
+        #save cookies after going over all prods        
+        save_cookies(d, city)
 
 
 if __name__ == "__main__":

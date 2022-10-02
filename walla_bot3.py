@@ -12,7 +12,7 @@ ADS_FILE      = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\g
 ERROR_UPLOADS = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\walla_bot\Not uploaded ads.txt'
 # PICS_FOLDER = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\ads_generator\banner_maker\results\results banner girl\\'
 #without links
-PICS_FOLDER = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\ads_generator\banner_maker\results\banner maker results\\'
+PICS_FOLDER = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\ads_generator\banner_maker\results\old banner no link\\'
 #chromdriver
 EXECUTABLE_PATH = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\login and launcher\chromedriver.exe'
 SITE_URL        = 'https://es.wallapop.com/'
@@ -22,24 +22,25 @@ PROXY_DATA      = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code
 
 
 #walla_ads_file.xlsx
-#Reference = 1
-TITLE_COL=   1
-AD_TEXT_COL= 2
-PRICE_COL=   3
-PICS_COL=    4
-CATEGORY=    5
-SUBCATEGORY_1_COL=   6
-SUBCATEGORY_2_COL=   7
-WEIGHT_COL=     8
-PROD_STATE_COL= 9
-BRAND_COL=      10
-MODEL_COL=      11
+#Reference = 0
+COMPLETE_QUERY_REF = 1
+TITLE_COL          = 2
+AD_TEXT_COL        = 3
+PRICE_COL          = 4
+PICS_COL           = 5
+CATEGORY           = 6
+SUBCATEGORY_1_COL  = 7
+SUBCATEGORY_2_COL  = 8
+WEIGHT_COL         = 9
+PROD_STATE_COL     = 10
+BRAND_COL          = 11
+MODEL_COL          = 12
 
 
 # import py file with proxy data from another folder
 def importDataFrom(fileName, filePath):
     '''fileName has to include extension like.py 
-    filePath has to include filename with extension at the end'''
+    filePath has to include filename with extension at the end: x.py'''
     
     from importlib.machinery import SourceFileLoader
     module = SourceFileLoader(fileName, filePath).load_module()
@@ -353,8 +354,9 @@ def upload_ad(d, ad_data, city):
     sleep(1)
     # click in upload new ad button
     if d.current_url != 'https://es.wallapop.com/app/catalog/upload' :
-        my_click(d, '//span[contains(text(), "Subir producto")]')
-        sleep(3)
+        d.get('https://es.wallapop.com/app/catalog/upload')
+        # my_click(d, '//span[contains(text(), "Subir producto")]')
+        sleep(4)
 
     #click in "Algo que ya no necesito"
     my_click(d, '//span[contains(text(), "Algo que ya no necesito")]')
@@ -385,13 +387,13 @@ def upload_ad(d, ad_data, city):
 
     # type brand | many products don't have brand-model
     if brand:
-        print(f'XXXXXXXXXX brand:{brand}')
+        print(f'brand:{brand}')
         type_text(d, brand ,'//input[@placeholder="P. ej: Apple"]', sleep_time=2)
         # specialClickPlaceholderMenu(d, brand)
     
     # same for model
     if model:
-        print(f'XXXXXXXXXX model:{brand}')
+        print(f'model:{model}')
         type_text(d, model, '//input[@placeholder="P. ej: iPhone"]', sleep_time=2)
         # specialClickPlaceholderMenu(d, model)
 
@@ -402,16 +404,18 @@ def upload_ad(d, ad_data, city):
     #upload manually a product with the wanted location, after this Wallapop will remember your selection for future ads
 
     #click in upload ad
-    my_click(d, '//button[@type="submit"]')
+    # my_click(d, '//button[@type="submit"]')
+    submitButton = d.find_element(By.XPATH, '//button[@type="submit"]')
+    submitButton.send_keys(Keys.ENTER)
 
-    sleep(4)
     #check if congratulations banner is present to record the uploaded ad to adsDb
     congratBanner = '//button[@class="btn btn-primary btn-primary--bold w-100"]'
     if congratBanner:
         recordUploadedProd(title, city)
-        
         #click congratultions banner and button
         my_click(d, congratBanner)
+    else:
+        recordItemNotUploaded(ad_data, city)
 
 def recordUploadedProd(title, city):
     pass
@@ -423,21 +427,64 @@ def recordItemNotUploaded(ad, city):
     with open(ERROR_UPLOADS, 'a') as f:
         f.write(f'{title}-- {city}\n')
 
+def backupAndClearFileNotUploadedProds():
+    import shutil
+    import os
+    import datetime
+    dateHour = datetime.datetime.now().strftime("%d,%B,%H")
+    
+    SourceFile  = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\walla_bot\NOT uploaded ads.txt'
+    Destination = rf'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\walla_bot\not uploaded prods log\NOT uploaded ads -- {dateHour}.txt'
+
+    #if file > 0KB then move to notUploaded log folder 
+    fileSize = os.path.getsize(SourceFile)
+    if fileSize > 0:
+        shutil.move(SourceFile, Destination)
+
+        #create new empty file
+        with open('NOT uploaded ads.txt', 'w') as f:
+            f.close()
+
+def closePrivacyBanner(d):
+
+    try:
+        banner = d.find_element(By.XPATH, '//button[@id="onetrust-accept-btn-handler"]')
+        if banner:
+            banner.click()
+    except Exception as e:
+        print(e)
+        pass
 
 def run():
         
     ads_to_upload = load_prods(ADS_FILE)
+    
+    backupAndClearFileNotUploadedProds()
 
-    for proxy_n in range(3):
+    for proxy_n in range(2, 3):
+
         d, city = set_driver(proxy_n)
         close_second_tab(d)
 
+        print(f'loading cookies for city: {city}')
         load_cookies(d, city)
+        closePrivacyBanner(d)
+        print('cookies loaded, uploading ads')
+        sleep(3)
+
+        #click cookies tab
+        # my_click(d, '//button[@id="onetrust-accept-btn-handler"]')
 
         for ad in ads_to_upload:
-            print('-----------',ad)
+            
+            #if no price then prod not available
+            if ad['price'] == None:
+                print(f"this ad:{ad['title']} doesn't has price")
+                continue
             try:
+                print('-----------', ad['title'])
                 upload_ad(d, ad, city)            
+
             except Exception as e:
                 recordItemNotUploaded(ad, city)
                 print('---------EXCEPTION UPLOADING AN AD!: ', e)
@@ -450,20 +497,12 @@ def run():
         save_cookies(d, city)
         d.close()
 
-    # for ad in ads_to_upload:
-
-    #     # create a driver on each ad avoids driver disconnect erros
-    #     d = set_driver()
-
-    #     try:
-    #         upload_ad(d, ad)
-    #     except Exception as e:
-    #         print(e)
-    #     finally:
-    #         d.close()
-            
 
 if __name__ == "__main__":  
     run()
-# Consolas y Videojuegos
-# Videojuegos
+
+
+
+
+
+
