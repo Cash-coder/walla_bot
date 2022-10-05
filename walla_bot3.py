@@ -54,52 +54,114 @@ def importDataFrom(fileName, filePath):
 #     import proxy_data
 #     return proxy_data
 
+
+def setFirefoxDriver(proxyN):
+    from selenium import webdriver
+    from selenium.webdriver.firefox.options import Options
+    from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+    from selenium.webdriver.firefox.service import Service
+
+    driverPath      = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\sm_sys_folder\geckodriver.exe'
+    profileRootPath = r"C:\Users\HP EliteBook\AppData\Roaming\Mozilla\Firefox\Profiles"
+
+    #proxy settings
+    proxy_data = importDataFrom('proxy_data.py', PROXY_DATA)
+    HTTPS_PORT = proxy_data.HTTPS_PORT
+    IP_ENTRY   = proxy_data.IP_DICT[proxyN]
+    IP         = IP_ENTRY.get('ip')
+    CITY       = IP_ENTRY.get('city')
+    PROFILE    = IP_ENTRY.get('profile')
+
+    print(f"city: {CITY}, IP:{IP}, Profile: {PROFILE}")
+
+    firefox_capabilities = DesiredCapabilities.FIREFOX
+    firefox_capabilities['marionette'] = True
+    firefox_capabilities['proxy'] = {
+    "proxyType": "MANUAL",
+    "httpProxy": f'{IP}:{HTTPS_PORT}',
+    "sslProxy": f'{IP}:{HTTPS_PORT}'
+    }
+
+    #profile settings:
+    #to know or create profiles folders
+    #search: about:support or about:profiles
+    options = Options()
+    options.add_argument('-headless')
+    options.add_argument("-profile")
+    options.add_argument(f"{profileRootPath}{PROFILE}")
+
+    dService = Service(driverPath)
+    d = webdriver.Firefox(service=dService, options=options)
+
+    return d, CITY
+
+
 def set_driver(proxy_n):
     
     import undetected_chromedriver.v2 as uc
     
-    # proxy_data = import_proxy_data()
+    print('setting driver ...')
+
     proxy_data = importDataFrom('proxy_data.py', PROXY_DATA)
     
-    IP_ENTRY  = proxy_data.IP_DICT[proxy_n]
-    IP        = IP_ENTRY.get('ip')
-    CITY      = IP_ENTRY.get('city')
-
     HTTPS_PORT = proxy_data.HTTPS_PORT
+    IP_ENTRY   = proxy_data.IP_DICT[proxy_n]
+    IP         = IP_ENTRY.get('ip')
+    CITY       = IP_ENTRY.get('city')
+    PROFILE    = IP_ENTRY.get('profile')
+
+    print(f"city: {CITY}, IP:{IP}, Profile: {PROFILE}")
 
     options = uc.ChromeOptions()
     options.add_argument(f'--proxy-server=http://{IP}:{HTTPS_PORT}')
     options.add_argument('--no-first-run --no-service-autorun --password-store=basic')
 
-    #problem with google alerts and pop ups that may obscure elements and impede to click
-    # prefs = {"profile.default_content_setting_values.notifications" : 2}
-    # options.add_experimental_option("prefs",prefs)
+    options.add_argument("--headless")
+    #to make headless work with cookies load the profile, this'll load the cookies as well
+    options.add_argument(r"--user-data-dir=C:\Users\HP EliteBook\AppData\Local\Google\Chrome\User Data")
+    options.add_argument(fr'--profile-directory={PROFILE}') 
 
     d = uc.Chrome(executable_path=EXECUTABLE_PATH, options=options)
     d.maximize_window()
+    print('driver set')
 
     return d, CITY
 
 def load_cookies(d, city):
     import pickle
     from os.path import exists
+    from os.path import getsize
 
+    print('loading cookies ...')
     cookies_filepath = f'{COOKIES_FOLDER}\{city}.pkl'
     if not exists(cookies_filepath):
         print(f"This city doesn't exist in the folder: {city} | filepath: {cookies_filepath}")
+    if getsize(cookies_filepath) == 0:
+        print(f"This cookies file size is 0KB: {cookies_filepath}")
     else:
         # driver has to be in the target URL in order to load the cookies
+
         d.get(SITE_URL)
+        # d.get('https://www.google.com/')
 
         cookies = pickle.load(open(cookies_filepath, "rb"))
         for cookie in cookies:
             if cookie['domain'] == '.wallapop.com':
                 d.add_cookie(cookie)
-                print(f'added this cookie: {cookie}')
+                # print(f'added this cookie: {cookie}')
 
         # to apply effect of the cookies reload the page
-        sleep(5)
+        print('sleep')
+        sleep(7)
+        print('refresh')
+        # d.refresh()
+        print('going to get site')
+        d.get('https://www.google.com/')
+        print('google got')
+        sleep(4)
         d.get(SITE_URL)
+
+        print('cookies loaded')
 
         return d
 
@@ -153,6 +215,8 @@ def close_second_tab(d):
         # back to where you were
         sleep(1)
         d.switch_to.window(second_winodw)
+
+        print('closed 2º tab')
 
 
 def load_prods(prods_file):
@@ -461,9 +525,10 @@ def run():
     
     backupAndClearFileNotUploadedProds()
 
-    for proxy_n in range(2, 3):
+    for proxy_n in range(3):
 
-        d, city = set_driver(proxy_n)
+        # d, city = set_driver(proxy_n)
+        d, city = setFirefoxDriver(proxy_n)
         close_second_tab(d)
 
         print(f'loading cookies for city: {city}')

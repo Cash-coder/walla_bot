@@ -87,3 +87,1001 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://localhost:9222/devtools/browser/f2d3466a-3b2f-4e5c-b93b-6deb0eb7f099
 1658333187779	Marionette	INFO	Stopped listening on port 24923
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1664963304795	geckodriver	INFO	Listening on 127.0.0.1:29078
+1664963307869	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+1664963308108	Marionette	INFO	Marionette enabled
+1664963308110	Marionette	INFO	Listening on port 29087
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 29087
+1664963308242	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664963308248	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/56b6f1ea-7c54-4736-b076-14277b26bcb5
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: https://js.api.here.com/v3/3.1.30.3/mapsjs-core-legacy.js, line 7: ReferenceError: H is not defined
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664963346548	Marionette	INFO	Stopped listening on port 29087
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1664963445432	geckodriver	INFO	Listening on 127.0.0.1:29171
+1664963448480	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "-headless" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664963448640	Marionette	INFO	Marionette enabled
+1664963448642	Marionette	INFO	Listening on port 29180
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 29180
+1664963448730	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664963448736	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/242fa851-c963-4f4b-b033-c88d0972039f
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664964302444	geckodriver	INFO	Listening on 127.0.0.1:29387
+1664964536551	geckodriver	INFO	Listening on 127.0.0.1:29424
+1664964539619	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 29180
+1664964539857	Marionette	INFO	Marionette enabled
+1664964539859	Marionette	INFO	Listening on port 29434
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/35d3f623-131d-425d-8c97-1bd3eeeccff2
+Read port: 29434
+1664964541784	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664964541785	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+1664964552905	Marionette	INFO	Stopped listening on port 29434
+1664975900510	geckodriver	INFO	Listening on 127.0.0.1:2836
+1664975903585	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remot*** You are running in headless mode.
+1664975903818	Marionette	INFO	Marionette enabled
+1664975903820	Marionette	INFO	Listening on port 2864
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 2864
+1664975903945	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664975903951	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}[[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dtDDevTools listening on ws://127.0.0.1:9222/devtools/browser/a57b01ea-5937-4dfa-b98f-df863ce5a51d1161664975956080	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664975956081	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"185.212.206.165:49155","sslProxy":"185.212.206.165:491551664976063498	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664976063499	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: https://js.api.here.com/v3/3.1.30.3/mapsjs-core-legacy.js, line 7: ReferenceError: H is not defined
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664976255811	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664976255811	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664976292843	Marionette	INFO	Stopped listening on port 2864
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664976255811	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664976255812	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664976293569	Marionette	INFO	Stopped listening on port 3212
+defined
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664976292798	Marionette	INFO	Stopped listening on port 3213
+1664976424018	geckodriver	INFO	Listening on 127.0.0.1:3644
+1664976427066	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remot*** You are running in headless mode.
+1664976427285	Marionette	INFO	Marionette enabled
+1664976427287	Marionette	INFO	Listening on port 3673
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 3673
+1664976427413	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664976427418	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}[[G[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dDDeDevTools listening on ws://127.0.0.1:9222/devtools/browser/51f3cf39-3188-4add-84f7-c40713bf9ddJavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JJaJavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.Ja1664976577564	Marionette	INFO	Stopped listening on port 3670
+ine 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664976590155	Marionette	INFO	Stopped listening on port 3673
+line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664976620946	Marionette	INFO	Stopped listening on port 3669
+1664977676102	geckodriver	INFO	Listening on 127.0.0.1:4976
+1664977679136	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664977679297	Marionette	INFO	Marionette enabled
+1664977679298	Marionette	INFO	Listening on port 4985
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 4985
+1664977679384	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664977679391	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/d5d91f4b-7784-453f-9015-565d94173548
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664978006062	geckodriver	INFO	Listening on 127.0.0.1:5161
+1664978009106	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\wzst72vl.bcn" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+****** You are r*** You are running in 16616649780092981664978009376	Marionette	INFO	Marionette enabled
+1664978009379	Marionette	INFO	Listening on port 5193
+WebDriver BiDi listening on ws://127.0.0.1:9222
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/05837272-7e5b-4476-a8df-ba2770887d29
+Read port: 5193
+1664978011280	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664978011280	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664978207297	Marionette	INFO	Stopped listening on port 5188
+1664979320091	geckodriver	INFO	Listening on 127.0.0.1:5859
+1664979323135	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remot*** You are running in headless mode.
+1664979323342	Marionette	INFO	Marionette enabled
+1664979323344	Marionette	INFO	Listening on port 5887
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 5887
+1664979323464	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664979323469	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}[[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dtDDevTools listening on ws://127.0.0.1:9222/devtools/browser/aa4df386-e312-43a3-a1ea-61bda3a180e2JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664979446282	Marionette	INFO	Stopped listening on port 5884
+1664979732681	geckodriver	INFO	Listening on 127.0.0.1:6364
+1664979735723	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664979735888	Marionette	INFO	Marionette enabled
+1664979735890	Marionette	INFO	Listening on port 6373
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 6373
+1664979735982	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664979735986	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/af329cd9-3511-4900-8787-9992e28bd642
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664980976386	geckodriver	INFO	Listening on 127.0.0.1:6684
+1664980979441	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+1664980979680	Marionette	INFO	Marionette enabled
+1664980979682	Marionette	INFO	Listening on port 6694
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 6694
+1664980979814	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664980979819	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/bcfb1b0a-d1da-4d99-be5c-191ed77b24ad
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664981010968	Marionette	INFO	Stopped listening on port 6694
+1664981432611	geckodriver	INFO	Listening on 127.0.0.1:6782
+1664981435711	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+1664981435984	Marionette	INFO	Marionette enabled
+1664981435986	Marionette	INFO	Listening on port 6791
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 6791
+1664981436117	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664981436122	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/6b49fa21-f91f-4112-8484-866c0ed25422
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664981565647	geckodriver	INFO	Listening on 127.0.0.1:6886
+1664981568718	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 6791
+1664981568966	Marionette	INFO	Marionette enabled
+1664981568968	Marionette	INFO	Listening on port 6897
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/560b09e3-7720-4e5f-ad87-19a8ed8a78ad
+Read port: 6897
+1664981570845	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664981570846	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664981671608	geckodriver	INFO	Listening on 127.0.0.1:6987
+1664981674656	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 6897
+1664981674896	Marionette	INFO	Marionette enabled
+1664981674897	Marionette	INFO	Listening on port 6997
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/c9095f66-9f9b-4856-8ca5-68dd87e8dd92
+Read port: 6997
+1664981676798	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664981676798	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664982077890	geckodriver	INFO	Listening on 127.0.0.1:7353
+1664982080936	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+1664982081416	Marionette	INFO	Marionette enabled
+1664982081420	Marionette	INFO	Listening on port 7362
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 7362
+1664982081660	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664982081672	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/da6c10e0-4121-4fc3-8f2a-c3b8a4e4db6d
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664982160298	geckodriver	INFO	Listening on 127.0.0.1:7436
+1664982163335	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 7362
+1664982164061	Marionette	INFO	Marionette enabled
+1664982164065	Marionette	INFO	Listening on port 7446
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/bcceaf19-fcb1-4328-9f0a-4ddc6e9b6f6e
+Read port: 7446
+1664982165512	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664982165513	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664982382906	geckodriver	INFO	Listening on 127.0.0.1:7550
+1664982385941	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 7446
+1664982386522	Marionette	INFO	Marionette enabled
+1664982386526	Marionette	INFO	Listening on port 7561
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/d4f1a6ee-7df6-457e-b376-6e50efec7df5
+Read port: 7561
+1664982388104	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664982388105	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664982478243	geckodriver	INFO	Listening on 127.0.0.1:7637
+1664982481285	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 7561
+1664982482010	Marionette	INFO	Marionette enabled
+1664982482013	Marionette	INFO	Listening on port 7648
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/6f203b47-849a-4e7b-b251-0681bc4a274d
+Read port: 7648
+1664982483452	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664982483454	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664982584970	geckodriver	INFO	Listening on 127.0.0.1:7729
+1664982588024	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 7648
+1664982588607	Marionette	INFO	Marionette enabled
+1664982588610	Marionette	INFO	Listening on port 7742
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/b284f96d-3399-436c-a0bb-fd542d82f4ea
+Read port: 7742
+1664982590195	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664982590196	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664982898083	geckodriver	INFO	Listening on 127.0.0.1:7853
+1664982901143	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 7742
+1664982901821	Marionette	INFO	Marionette enabled
+1664982901825	Marionette	INFO	Listening on port 7863
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/93d6da53-404d-468c-bc1b-fea61885a461
+Read port: 7863
+1664982903328	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664982903329	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664982986551	geckodriver	INFO	Listening on 127.0.0.1:7943
+1664982989607	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 7863
+1664982990262	Marionette	INFO	Marionette enabled
+1664982990265	Marionette	INFO	Listening on port 7953
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 7953
+1664982991778	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664982991779	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/af283b35-84ec-429a-9acb-c806fe94a134
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664983412846	geckodriver	INFO	Listening on 127.0.0.1:8073
+1664983415905	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 7953
+1664983416516	Marionette	INFO	Marionette enabled
+1664983416519	Marionette	INFO	Listening on port 8084
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/4e1225e3-7e60-4449-9966-f0f5bad7ff1a
+Read port: 8084
+1664983418092	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664983418093	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+1664983455206	geckodriver	INFO	Listening on 127.0.0.1:8135
+1664983458245	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 8084
+1664983459169	Marionette	INFO	Marionette enabled
+1664983459180	Marionette	INFO	Listening on port 8145
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 8145
+1664983460663	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664983460664	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/92c303dc-e646-45bf-9fb2-69e1ec7a9292
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1664985934056	geckodriver	INFO	Listening on 127.0.0.1:1061
+1664985937124	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 8145
+1664985937635	Marionette	INFO	Marionette enabled
+1664985937639	Marionette	INFO	Listening on port 1072
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/ac56769d-ea7d-4f4d-88c0-f516d448a0d8
+Read port: 1072
+1664985939304	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664985939305	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664986156865	geckodriver	INFO	Listening on 127.0.0.1:1184
+1664986159926	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+Read port: 1072
+1664986160750	Marionette	INFO	Marionette enabled
+1664986160754	Marionette	INFO	Listening on port 1195
+WebDriver BiDi listening on ws://127.0.0.1:9222
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/bcd689cc-3066-4f61-82f9-6836f31521df
+Read port: 1195
+1664986162087	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664986162088	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+1664986340189	Marionette	INFO	Stopped listening on port 1195
+1664988039924	geckodriver	INFO	Listening on 127.0.0.1:1521
+1664988042997	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1661664988043518	Marionette	INFO	Marionette enable1661664988043522	Marionette	INFO	Listening on port 154WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 1547
+1664988043710	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664988043719	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}[GF[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dDDeDevTools listening on ws://127.0.0.1:9222/devtools/browser/938afdd9-c820-4350-8bea-1c1836acb6ec1664988064356	Marionette	INFO	Stopped listening on port 1547
+
+1664988129017	geckodriver	INFO	Listening on 127.0.0.1:1729
+1664988132096	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664988132540	Mario1664988132703	Marionette	INFO	Marionette enabled
+1664988132709	Marionette	INFO	Listening on port 1759
+WebDriver BiDi listening on ws://127.0.0.1:9222
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Read port: 1759
+1664988134301	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664988134301	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/0bfbbe01-3031-4877-a881-e16649881479861664988387933	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664988387936	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+1664988521120	Marionette	INFO	Stopped listening on port 1759
+inked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+1664988493416	Marionette	INFO	Stopped listening on port 1992
+us message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+1664988503148	Marionette	INFO	Stopped listening on port 1990
+1664988626363	geckodriver	INFO	Listening on 127.0.0.1:2327
+1664988629409	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remot*** You are running in headless mode.
+1664988629903	Marionette	INFO	Marionette enabled
+1664988629908	Marionette	INFO	Listening on port 2356
+Read port: 2356
+WebDriver BiDi listening on ws://Read port: 2354
+1661664988630088	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664988630097	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+[GF[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dDevDevTools listening on ws://127.0.0.1:9222/devtools/browser/0f42b01c-d922-4d5b-9f9b-7ae69b07caaJavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+1664988791920	Marionette	INFO	Stopped listening on port 2355
+1664989316753	geckodriver	INFO	Listening on 127.0.0.1:2832
+1664989319820	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664989320297	Marionette	INFO	Marionette enabled
+1664989320302	Marionette	INFO	Listening on port 2860
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 2860
+1664989320487	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664989320496	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}[GF[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dDDevTools listening on ws://127.0.0.1:9222/devtools/browser/b50ef3c7-8710-49b6-a53f-eafc1f37fbb1JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+J1664989430238	Marionette	INFO	Stopped listening on port 2860
+ active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+1664989459656	Marionette	INFO	Stopped listening on port 2858
+1664989772989	geckodriver	INFO	Listening on 127.0.0.1:3299
+1664989776056	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remot*** You are running in headless mode.
+1664989776269	Marionette	INFO	Marionette enabled
+1664989776272	Marionette	INFO	Listening on port 3328
+Read port: 3328
+WebDriver BiDi listening on ws://127.0.0.1:9222
+1661664989776352	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664989776357	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+[[G[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dDDeDevTools listening on ws://127.0.0.1:9222/devtools/browser/60797168-e970-4656-bcee-66a612acf31JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+J1664989883107	Marionette	INFO	Stopped listening on port 3328
+ active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+JavaScript warning: , line 0: WebGL warning: uniform setter: No active linked Program.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://es.wallapop.com."
+1664989912014	Marionette	INFO	Stopped listening on port 3322
+1664990065066	geckodriver	INFO	Listening on 127.0.0.1:3738
+1664990068137	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+****** You are running in headless mode1664990068345	Marionette	INFO	Marionette enabled
+1664990068347	Marionette	INFO	Listening on port 3768
+Read port: 3768
+WebDriver BiDi listening on ws://127.0.0.1:9222
+1664990068393	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664990068398	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"185.212.206.165:49155","sslProxy":"185.212.206.165:49155"[[G[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dDDevTools listening on ws://127.0.0.1:9222/devtools/browser/249165c7-3e94-4cd8-bdb6-79f48748d03b1664990094596	Marionette	INFO	Stopped listening on port 3767
+
+
+1664990148053	geckodriver	INFO	Listening on 127.0.0.1:3936
+1664990151129	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664990151353	Marionette	INFO	Marionette enabled
+1664990151355	Marionette	INFO	Listening on port 3963
+WebDriver BiDi listening on ws://127.0.0.1:9222
+ReaRead port: 391664990151478	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664990151484	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"185.212.206.165:49155","sslProxy":"185.212.206.165:49155"[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevDevTools listening on ws://127.0.0.1:9222/devtools/browser/506bf8ad-f60e-48c2-a7ac-d60a93932e61664990168173	Marionette	INFO	Stopped listening on port 3962
+
+
+1664990297768	geckodriver	INFO	Listening on 127.0.0.1:4178
+1664990300818	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remot*** You are running in headless mode.
+1664990301023	Marionette	INFO	Marionette enabled
+1664990301026	Marionette	INFO	Listening on port 4208
+Read port: 4207
+WebDriver BiDi listening on ws://127.0.0.1:9222
+1661664990301071	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664990301076	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+[GF[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dDDevTools listening on ws://127.0.0.1:9222/devtools/browser/71af42ca-d912-4df3-afcf-54f235be8c5411664990315790	Marionette	INFO	Stopped listening on port 4207
+
+1664990338202	geckodriver	INFO	Listening on 127.0.0.1:4360
+1664990341263	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664990341473	Marionette	INFO	Marionette enabled
+1664990341475	Marionette	INFO	Listening on port 4388
+Read port: 4386
+WebDriver BiDi listening on ws://127.0.0.1:9222
+1664990341548	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664990341553	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/6ef514de-9dc3-40a0-86af-be5008463818
+1664990358387	Marionette	INFO	Stopped listening on port 4387
+
+
+1664990404808	geckodriver	INFO	Listening on 127.0.0.1:4547
+1664990407867	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664990408074	Marionette	INFO	Marionette enabled
+1664990408076	Marionette	INFO	Listening on port 4575
+Read port: 4574
+WebDriver BiDi listening on ws://127.0.0.1:9222
+1661664990408155	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664990408160	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+[[G[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dDDeDevTools listening on ws://127.0.0.1:9222/devtools/browser/5dde5242-8311-4097-bb9b-cdab0e7cc3711664990545032	RemoteAgent	WARN	TLS certificate errors will be ignored for this session11664990545033	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49151664990561860	Marionette	INFO	Stopped listening on port 4571
+574
+[Parent 13620, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+emote"
+*** You are running*** You are running 1664990545212	Marionette	INFO	Marionette enabled
+1664990545213	Marionette	INFO	Listening on port 4756
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 4756
+1664990545300	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664990545305	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"185.212.206.165:49155","sslProxy":"185.212.206.165:49155"}
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/760d8841-5ea6-42a9-87ad-03510f3a537d
+1664990558595	Marionette	INFO	Stopped listening on port 4756
+1664990572216	geckodriver	INFO	Listening on 127.0.0.1:4867
+1664990575267	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remot****** You are running in headless mode1661664990575472	Marionette	INFO	Marionette enable1664990575475	Marionette	INFO	Listening on port 4895
+Read port: 4893
+WebWebDriver BiDi listening on ws://127.0.0.1:9221664990575537	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664990575542	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}[[G[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dDDeDevTools listening on ws://127.0.0.1:9222/devtools/browser/deee417a-d363-4f10-84fb-96b045a9d6d11664990592827	Marionette	INFO	Stopped listening on port 4895
+
+1664990746256	geckodriver	INFO	Listening on 127.0.0.1:5063
+1664990749328	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\wzst72vl.bcn" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664990749542	Marionette	INFO	Marionette enabled
+1664990749544	Marionette	INFO	Listening on port 5093
+WebDriver BiDi listening on ws://127.0.0.1:9222
+ReaRead port: 501664990749669	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664990749674	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DDevTools listening on ws://127.0.0.1:9222/devtools/browser/4d6cd8a0-10fc-434f-8d36-0fff55a59f2911664990766216	Marionette	INFO	Stopped listening on port 5093
+Parent 21576, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1664990782629	geckodriver	INFO	Listening on 127.0.0.1:5243
+1664990785704	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\fuxgl1kf.madrid" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remot*** You are running in headless mode.
+1661664990785928	Marionette	INFO	Marionette enabled
+1664990785931	Marionette	INFO	Listening on port 527ReaRead port: 52WebWebDriver BiDi listening on ws://127.0.0.1:9221661664990785964	RemoteAgent	WARN	TLS certificate errors will be ignored for this sessio1661664990785970	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"103.80.87.94:49155","sslProxy":"103.80.87.94:49155"}
+[[G[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dDevTools listening on ws://127.0.0.1:9222/devtools/browser/d21d17ec-22a2-4db4-a3cf-099e29fd00ad
+11664990804421	Marionette	INFO	Stopped listening on port 5271
+
+1664990813305	geckodriver	INFO	Listening on 127.0.0.1:5425
+1664990816368	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+****** You are running in headless mode1664990816582	Marionette	INFO	Marionette enabled
+1664990816585	Marionette	INFO	Listening on port 5453
+Read port: 5453
+WebDriver BiDi listening on ws://127.0.0.1:9222
+1664990816659	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664990816666	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"185.212.206.165:49155","sslProxy":"185.212.206.165:49155"[[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dtDevTools listening on ws://127.0.0.1:9222/devtools/browser/e2edace7-239b-4796-9edd-82692394af25
+11664990835313	Marionette	INFO	Stopped listening on port 5453
+
+1664992581412	geckodriver	INFO	Listening on 127.0.0.1:6255
+1664992584454	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+****** You are r*** You are running in 1661664992584652	Marionette	INFO	Marionette enable1661664992584654	Marionette	INFO	Listening on port 627WebRead port: 6279
+WebDriver BiDi listening on ws://127.0.0.1:9221664992584728	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664992584733	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"185.212.206.165:49155","sslProxy":"185.212.206.165:49155"[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/4a81870e-3007-4175-b3b3-e6e9fc3dcf63
+1664992599353	Marionette	INFO	Stopped listening on port 6279
+8
+1664992607145	geckodriver	INFO	Listening on 127.0.0.1:6431
+1664992610215	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664992610437	Marionette	INFO	Marionette enabled
+1664992610440	Marionette	INFO	Listening on port 6460
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 6460
+1664992610566	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664992610571	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}[[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dtDDeDevTools listening on ws://127.0.0.1:9222/devtools/browser/dfeaa6a8-4541-4d3a-b290-eac3f82459711664992629142	Marionette	INFO	Stopped listening on port 6460
+
+1664992731982	geckodriver	INFO	Listening on 127.0.0.1:6630
+1664992735055	mozrunner::runner	INFO	Running command: "C:\\1664992736078	mozrunner::runner	INFO	Running command: "C:\\1664992737078	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664992737264	Marionette	INFO	Marionette enabled
+1664992737266	Marionette	INFO	Listening on port 6678
+WebDriver BiDi listening on ws://127.0.0.1:9222
+Read port: 6678
+1664992737379	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664992737385	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+[GFX1-]: RenderCompositorSWGL failed mapping defaul1664992749930	Marionette	INFO	Stopped listening on port 6652
+1664992749648	Marionette	INFO	Stopped listening on port 61664992752485	Marionette	INFO	Stopped listening on port 6678
+1664992893535	geckodriver	INFO	Listening on 127.0.0.1:6828
+1664992896607	mozrunner::runner	INFO	Running command: "C:\\1664992897652	mozrunner::runner	INFO	Running command: "C:\\1664992898668	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664992898875	Marionette	INFO	Marionette enabled
+1664992898877	Marionette	INFO	Listening on port 6887
+Read port: 6887
+WebDriver BiDi listening on ws://127.0.0.1:9222
+1664992898912	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664992898919	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+[GFX1-]: RenderCompositorSWGL failed mapping defaul1664992911188	Marionette	INFO	Stopped listening on port 6850
+1664992911203	Marionette	INFO	Stopped listening on port 61664992917058	Marionette	INFO	Stopped listening on port 6887
+1664992921243	geckodriver	INFO	Listening on 127.0.0.1:7015
+1664992924326	mozrunner::runner	INFO	Running command: "C:\\1664992925360	mozrunner::runner	INFO	Running command: "C:\\1664992926367	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-profile" "C:\\Users\\HP EliteBook\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\i6aagr8z.zgz" "--remote-debugging-port" "9222" "--remote-allow-hosts" "localhost" "-no-remote"
+*** You are running in headless mode.
+1664992926569	Marionette	INFO	Marionette enabled
+1664992926571	Marionette	INFO	Listening on port 7073
+Read port: 7073
+WebDriver BiDi listening on ws://127.0.0.1:9222
+1664992926636	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1664992926642	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"193.43.119.198:49155","sslProxy":"193.43.119.198:49155"}
+[GFX1-]: RenderCompositorSWGL failed mapping defaul1664992938935	Marionette	INFO	Stopped listening on port 7036
+1664992938905	Marionette	INFO	Stopped listening on port 71664992939989	Marionette	INFO	Stopped listening on port 7073
