@@ -9,10 +9,6 @@ from selenium.webdriver import ActionChains
 import traceback
 import time
 
-#site with prods
-# https://es.wallapop.com/app/user/ericr-404394075-nz0mmk5ggvjo/published
-# great phones: https://es.wallapop.com/app/user/taraa-79069256-lqzmpq7dgozv/published
-#g drive spreadshit + phone (teneis teléfono? tengo un marketplace de prods en el que podrías vender)
 
 #this programe runs over all prods in a walla account to perform 3 possible actions in this order
 #remove the ad if the prod is no longer present in prodsDB
@@ -29,6 +25,27 @@ import time
 
 PASS_FILE_PATH = r'C:\Users\HP EliteBook\OneDrive\A_Miscalaneus\Escritorio\Code\git_folder\sm_sys_folder\pass_module.py'
 
+def generateDescription(minPrice):
+    #example: '3 pagos de 150€ = 450€'
+    oneInstallmentPrice = int(minPrice/3)
+    installmentText = f"3 pagos de {oneInstallmentPrice}€ = {minPrice}"
+
+    #version with installment payment
+    updatedDescription = f"""✨ Smart-Market ✨ 
+Todos nuestros productos cuentan con garantía de hasta 3 años ⭐️
+Precio aplazado en 3 cómodos pagos: {installmentText} ⭐️
+Producto de Segunda Mano sin abrir ni reparaciones⭐️
+Puedes ver fotos reales de cada producto en nuestra web ⭐️
+Entregamos factura de compra y garantía ⭐️
+Ofrecemos muchos más precios y modelos en nuestra web ⭐️
+Envío Gratis a domicilio 24h ⭐️
+Compras en nuestra web ⭐️
+Te damos tiempo para que lo veas y pruebes en persona⭐️
+Te desamos feliz compra ⭐️
+✨  Smart-Market ✨
+"""
+    return updatedDescription
+    
 
 def importPassFile():
     import sys
@@ -100,49 +117,118 @@ def updateWallaProdPrice(d, ad, myCursor, city):
     pricesList = myCursor.fetchall()
     intList = [int(price[0].split('.')[0]) for price in pricesList]
 
-    #if current price is min price, do nothing
+    # if current price is min price, do nothing
     minPrice = min(intList)
-    if minPrice == current_price:
+    installmentPrice = int(minPrice/3)
+
+    if installmentPrice == current_price:
         #false because the price is the same, 
         #the return will be used to trigger just an update to grain traffic
         return False 
 
-    #if current price is different than minPrice in DB:
-    print(f'city: {city}, there is a lower price for this prod: {title}, currentPrice: {current_price}, minPrice: {minPrice}')
-    #click in edit
+    # Bug Fix:
+    # InterceptionError, other element will receive the click
+    # sleep or
+    # d.switch_to.active_element
+
+    # if current price is different than minPrice in DB:
+    print(f'city: {city}, price change in: {title}, currentPrice: {current_price}, minPrice: {minPrice}, installment: {installmentPrice}')
+    # click in edit
     ad.find_element(By.XPATH, './/button[@class="btn-edit ng-star-inserted"]').send_keys(Keys.RETURN)
     time.sleep(5)
     
-    #click in price
-    priceInput = d.find_element(By.XPATH, '//input[@id="price"]')
-    priceInput.click()
+    # sometimes weigth is uncheked
+    d.find_elements(By.XPATH , '//label[@class="WeightSelector btn ng-star-inserted"]/input')[0].click()
 
-    #remove old price
+    # text update (installments price)
+    UpdateText(d, minPrice)
+    time.sleep(2)
+   
+    # Price update with RETURN at the end
+    updatePrice(d, installmentPrice)
+    time.sleep(2)
+
+    # signal the prodPrice has been update
+    return True
+
+def UpdateText(d, minPrice):
+    
+    #generate description updated with new price
+    updatedText = generateDescription(minPrice)
+    
+    # click in textarea
+    textArea = d.find_element(By.XPATH ,'//textarea')
+    textArea.click()
+    time.sleep(0.3)
+
+    # chain remove old text Cn+a, delete
+    ActionChains(d).key_down(Keys.CONTROL).send_keys("a")\
+        .send_keys(Keys.DELETE).key_up(Keys.CONTROL).perform()
+    time.sleep(0.3)
+
+    #paste new text
+    textArea.send_keys(updatedText)
+    time.sleep(0.5)
+
+
+def updatePrice(d, minPrice):
+    from selenium.common.exceptions import ElementClickInterceptedException
+    import traceback
+    
+    # click in price avoiding bugs
+    attempts = 0
+    while attempts < 2:
+        try :
+            time.sleep(2)
+            # d.switch_to.active_element
+
+            priceInputXpath = '//input[@id="price"]'
+            # priceInputXpath = '//label[@for="price"]'
+            priceInput = d.find_element(By.XPATH, priceInputXpath)
+            
+            action = ActionChains(d)
+            action.click(on_element= priceInput).perform()
+            # priceInput.click()
+            
+            break
+
+        except ElementClickInterceptedException:
+            print(f'element Interception Exception dected, trying again ...')
+            # print(traceback.format_exc)
+            attempts += 1
+
+    # remove old price
     ActionChains(d).key_down(Keys.CONTROL).send_keys("a")\
         .send_keys(Keys.DELETE).key_up(Keys.CONTROL).perform()
 
-    #send new price
-    priceInput.send_keys(minPrice)
-    priceInput.send_keys(Keys.ENTER)
+    # send new price
+    d.find_element(By.XPATH, priceInputXpath).send_keys(minPrice)
+    time.sleep(1)
+    d.find_element(By.XPATH, priceInputXpath).send_keys(Keys.ENTER)
 
-    time.sleep(8)    
-
-    #signal the prodPrice has been update
-    return True
+    time.sleep(5)    
 
 def updateProd(ad, d):
 
-    title = ad.find_element(By.XPATH, './/span[@class="info-title subtitle"]').text.lower()
+    # title = ad.find_element(By.XPATH, './/span[@class="info-title subtitle"]').text.lower()
     
     #enter on update button
     ad.find_element(By.XPATH, './/button[@class="btn-edit ng-star-inserted"]').send_keys(Keys.RETURN)
     time.sleep(6)
+    
+    #sometimes shipping button is not marked
+    #[0]:2kg, [1]:5kg, etc...
+    d.find_elements(By.XPATH , '//label[@class="WeightSelector btn ng-star-inserted"]/input')[0].click()
 
-    #return on prod's page update
+    #return on prod's page update button
     # d.find_element(By.XPATH, '//span[contains(text(), "Actualizar")]').send_keys(Keys.RETURN)
     d.find_element(By.XPATH, '//button[@class="btn btn-block btn-primary"]').send_keys(Keys.RETURN)
 
-    time.sleep(6)
+    time.sleep(3)
+
+    # return to catalog page
+    # sometimes it gets stucked for walla errors
+    d.get('https://es.wallapop.com/app/catalog/published')
 
 def closePrivacyBanner(d):
 
@@ -187,8 +273,6 @@ def selectAd(ads, adsTitles, n):
                     print(f'p: {title}')
                     if title == targetTitle:
                         return title
-
-    
     # print(f"Can't find the targetTitle: '{targetTitle}' in the TitlesList: {adsTitles}")
 
 def getAdsTitles(d, adsXpath):
@@ -203,11 +287,11 @@ def getAdsTitles(d, adsXpath):
     return titles 
 
 
-def run(proxyN):
+def run(proxyN, headless):
     
     mydb, myCursor = SetDbConnector()  
     
-    d, city = setFirefoxDriver(proxyN)
+    d, city = setFirefoxDriver(proxyN, headless)
     close_second_tab(d)
 
     #accept cookies banner
@@ -216,6 +300,11 @@ def run(proxyN):
     d.get('https://es.wallapop.com/app/catalog/published')
     time.sleep(12) #let prods page to load all prods
 
+    #every time you update an ad
+    #walla relocates the ad in the serp, breaking indexes
+    #the relocation breaks the index order
+    #so, use the title to select the ad
+    #adsTitles[n]
     adsXpath = '//div[@class="row CatalogItem__content"]'
     ads = d.find_elements(By.XPATH, adsXpath)
     totalAds = len(ads)
@@ -225,21 +314,19 @@ def run(proxyN):
         try:
             specialSleep(d, totalAds, adsXpath)
 
-            #every time you update an ad
-            #walla relocates the ad in the serp, breaking indexes
-            #the relocation breaks the index order
-            #so use the title to select the ad
-            #adsTitles[n]
             ads = d.find_elements(By.XPATH, '//div[@class="row CatalogItem__content"]')
             ad, title = selectAd(ads, adsTitles, n)
-            
+
+            #pick some specific prod title
+            # if 'iphone 8' not in title:
+            #     continue
+
             #if prod is not present in DB
             if not checkProdPresenceInProdsDb(title, myCursor):
                 print(f'{city}: this prod title is not in the database: {title}, removing ...')
                 removeProdFromWalla(ad, d)
                 continue
 
-            continue
             #update prod price, if it has been updated got to the next prod
             if updateWallaProdPrice(d, ad, myCursor, city):
                 continue
@@ -249,7 +336,6 @@ def run(proxyN):
             print(f"{city}: going to just update this prod: {title}")
             adTitle = ad.find_element(By.XPATH, './/span[@class="info-title subtitle"]').text.lower()
             updateProd(ad, d)
-            
             time.sleep(2)
 
         except Exception as e:
@@ -258,15 +344,14 @@ def run(proxyN):
             pass
     
     d.close()
-    #save cookies after going over all prods        
-    # save_cookies(d, city)
 
 
 def main():
     
-    a = Process(target=run, args=(0,))
-    b = Process(target=run, args=(1,))
-    c = Process(target=run, args=(2,))
+    headless = True
+    a = Process(target=run, args=(0, headless))
+    b = Process(target=run, args=(1, headless))
+    c = Process(target=run, args=(2, headless))
     
     a.start()
     time.sleep(1)
@@ -279,7 +364,8 @@ def main():
     c.join()
 
     #test one in isolated way, without headless
-    # run(2)
+    # headless = False
+    # run(1, headless)
 
     print(f'finish time in {time.perf_counter()} secs')
 

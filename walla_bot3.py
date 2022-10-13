@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
+from multiprocessing import Process, cpu_count
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import traceback
-from time import sleep
+from time import sleep, perf_counter
 
 #load ads to upload
 #login in walla using cookies and G user browser
@@ -55,7 +56,7 @@ def importDataFrom(fileName, filePath):
 #     return proxy_data
 
 
-def setFirefoxDriver(proxyN):
+def setFirefoxDriver(proxyN, headless):
     from selenium import webdriver
     from selenium.webdriver.firefox.options import Options
     from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
@@ -86,12 +87,14 @@ def setFirefoxDriver(proxyN):
     #to know or create profiles folders
     #search: about:support or about:profiles
     options = Options()
-    options.add_argument('-headless')
+    if headless:
+        options.add_argument('-headless')
     options.add_argument("-profile")
     options.add_argument(f"{profileRootPath}{PROFILE}")
 
     dService = Service(driverPath)
     d = webdriver.Firefox(service=dService, options=options)
+    d.maximize_window()
 
     return d, CITY
 
@@ -250,23 +253,21 @@ def load_prods(prods_file):
     return prod_ads
 
 def my_click(d, xpath): 
+    from selenium.webdriver.support import expected_conditions as EC
     from selenium.webdriver.common.action_chains import ActionChains
     from selenium.webdriver.common.by import By
     from selenium.webdriver.common.keys import Keys
-    from selenium.webdriver.support import expected_conditions as EC
     from selenium.webdriver.support.ui import WebDriverWait
 
     wait = WebDriverWait(d, 6)
 
-    print('-----------',xpath)
-    
-    target = wait.until(
+    # target = wait.until(
         # EC.presence_of_element_located((By.XPATH, xpath)))
-        EC.element_to_be_clickable((By.XPATH, xpath)))
+        # EC.element_to_be_clickable((By.XPATH, xpath)))
     try:
         #this avoids error: element click intercepted ... Other element would receive the click:
         #select highest level xpath: div inside a header, select header
-        wait.until(EC.visibility_of_element_located)
+        target = wait.until(EC.visibility_of_element_located((By.XPATH, xpath)))
 
         target.click()
 
@@ -286,6 +287,7 @@ def my_click(d, xpath):
             #print(e)
             print("can't switch to active element")
     except Exception as e:
+        print(f"---Can't click this xpath: {xpath}")
         print(e)
 
 def type_text(d, text, xpath, sleep_time, end_with='unspecified'):
@@ -314,11 +316,9 @@ def type_text(d, text, xpath, sleep_time, end_with='unspecified'):
 
     # element.click()
     # d.execute_script("arguments[0].click;", element)
-# 
     # pyperclip.copy(text)
     # act = ActionChains(d)
     # act.key_down(Keys.CONTROL).send_keys("v").key_up(Keys.CONTROL).perform()
-
     
     if end_with == 'tab':
         element.send_keys(Keys.TAB)
@@ -335,19 +335,17 @@ def type_text_with_emoji(d, text, xpath, sleep_time):
     import pyperclip
 
     element = d.find_element(By.XPATH, xpath)
-    # element.send_keys(text)
     element.click()
-    # d.execute_script("arguments[0].click;", element)
+    element.send_keys(text)
 
-    pyperclip.copy(text)
-
-    act = ActionChains(d)
-    act.key_down(Keys.CONTROL).send_keys("v").key_up(Keys.CONTROL).perform()
+    # paste this way if using chromedriver
+    # pyperclip.copy(text)
+    # act = ActionChains(d)
+    # act.key_down(Keys.CONTROL).send_keys("v").key_up(Keys.CONTROL).perform()
 
     sleep(sleep_time)
-    
 
-def select_category(d, category, subcategory):
+def select_category(d, category, subcat1, subcat2):
     
     #click in category drop down
     sleep(2)
@@ -357,18 +355,32 @@ def select_category(d, category, subcategory):
     #in the dropdown menu click element that has text from category parameter
     my_click(d, f'//div[contains(text(), "{category}")]')
     sleep(2)
-    #fold back dropdowm menu
-    my_click(d, '//h2[contains(text(), "Información de tu producto")]')
+    #fold back dropdowm menu by clicking something random
+    # my_click(d, '//h2[contains(text(), "Información de tu producto")]')
+    my_click(d, '//label[@for="price"]')
     
     #click subcategory dropdown menu
     my_click(d, '//tsl-dropdown[@placeholder="Subcategoría"]')
 
     #click in matching subcategory
-    my_click(d, f'//span[contains(text(), "{subcategory}")]')
+    my_click(d, f'//span[contains(text(), "{subcat1}")]')
     sleep(2)
 
     #fold back the dropdown menu
-    my_click(d, '//h2[contains(text(), "Información de tu producto")]')
+    my_click(d, '//label[@for="price"]')
+    # my_click(d, '//h2[contains(text(), "Información de tu producto")]')
+
+    #sometimes prods have subcat2
+    if subcat2:
+        #click dropdown menu
+        my_click(d, '//tsl-dropdown[@id="objectType2"]')
+        sleep(2)
+        #click in matching cateorgy
+        my_click(d , f'//span[contains(text(), "{subcat2}")]')
+        sleep(2)
+        #fold back the dropdown menu
+        my_click(d, '//label[@for="price"]')
+
 
 def select_prod_state(d, prod_state):
 
@@ -393,7 +405,7 @@ def insert_pics(d, pic_names, pics_folder):
         try:
 
             pic_local_path = pics_folder + pic_name
-            print(f'input: {input} \npic: {pic_local_path}')
+            # print(f'input: {input} \npic: {pic_local_path}')
             input.send_keys(pic_local_path)
         except Exception as e :
                 print(' error in insert_pics(): ', e)
@@ -435,34 +447,31 @@ def upload_ad(d, ad_data, city):
     type_text_with_emoji(d, ad_text ,'//textarea[@id="tellUs"]', sleep_time=2)
     
     #click in cat and sub_cat
-    select_category(d, category, subcategory_1)
+    select_category(d, category, subcategory_1, subcategory_2)
     # sometimes the dropdown menu doesn't fold back again, 
     # covering the next click area
-    # to avoid this, click in the H2, so the menu folds back again
-    my_click(d, '//h2[contains(text(), "Información de tu producto")]')
+    my_click(d, '//label[@for="price"]')
 
     #click and select prod state
     select_prod_state(d, prod_state)
     # fold back the dropdown menu
-    my_click(d, '//h2[contains(text(), "Información de tu producto")]')
+    my_click(d, '//label[@for="price"]')
 
     #insert pics
     insert_pics(d, pics, PICS_FOLDER)
 
     # type brand | many products don't have brand-model
     if brand:
-        print(f'brand:{brand}')
         type_text(d, brand ,'//input[@placeholder="P. ej: Apple"]', sleep_time=2)
         # specialClickPlaceholderMenu(d, brand)
-    
     # same for model
     if model:
-        print(f'model:{model}')
         type_text(d, model, '//input[@placeholder="P. ej: iPhone"]', sleep_time=2)
         # specialClickPlaceholderMenu(d, model)
 
     #click in prod shipping weight | 2, 5, 10, 20, 30 kg
-    my_click(d, f'//span[contains(text(), "{weight}")]')
+    # my_click(d, f'//span[contains(text(), "{weight}")]')
+    d.find_elements(By.XPATH , '//label[@class="WeightSelector btn ng-star-inserted"]/input')[0].click()
 
     #LOCATION   
     #upload manually a product with the wanted location, after this Wallapop will remember your selection for future ads
@@ -473,13 +482,19 @@ def upload_ad(d, ad_data, city):
     submitButton.send_keys(Keys.ENTER)
 
     #check if congratulations banner is present to record the uploaded ad to adsDb
-    congratBanner = '//button[@class="btn btn-primary btn-primary--bold w-100"]'
-    if congratBanner:
-        recordUploadedProd(title, city)
+    sleep(3)
+    try:
+        congratBanner = '//button[@class="btn btn-primary btn-primary--bold w-100"]'
+        
         #click congratultions banner and button
         my_click(d, congratBanner)
-    else:
+        recordUploadedProd(title, city)
+        print(f'successfuly uploaded prod: {title}')
+    except Exception as e:
+        print('saving screenshot',e)
+        d.save_screenshot(f"screenshot: {title}.png")
         recordItemNotUploaded(ad_data, city)
+
 
 def recordUploadedProd(title, city):
     pass
@@ -519,52 +534,69 @@ def closePrivacyBanner(d):
         print(e)
         pass
 
-def run():
+def run(proxy_n, headless):
         
     ads_to_upload = load_prods(ADS_FILE)
     
     backupAndClearFileNotUploadedProds()
 
-    for proxy_n in range(3):
+    # d, city = set_driver(proxy_n)
+    d, city = setFirefoxDriver(proxy_n, headless)
+    # closePrivacyBanner(d)
+    sleep(3)
 
-        # d, city = set_driver(proxy_n)
-        d, city = setFirefoxDriver(proxy_n)
-        close_second_tab(d)
+    #click cookies tab
+    # my_click(d, '//button[@id="onetrust-accept-btn-handler"]')
 
-        print(f'loading cookies for city: {city}')
-        load_cookies(d, city)
-        closePrivacyBanner(d)
-        print('cookies loaded, uploading ads')
-        sleep(3)
-
-        #click cookies tab
-        # my_click(d, '//button[@id="onetrust-accept-btn-handler"]')
-
-        for ad in ads_to_upload:
-            
-            #if no price then prod not available
-            if ad['price'] == None:
-                print(f"this ad:{ad['title']} doesn't has price")
-                continue
-            try:
-                print('-----------', ad['title'])
-                upload_ad(d, ad, city)            
-
-            except Exception as e:
-                recordItemNotUploaded(ad, city)
-                print('---------EXCEPTION UPLOADING AN AD!: ', e)
-                traceback.print_exc()
-                print('going to refresh the page to start a fresh new ad')
-                sleep(8)
-                #refresh page to clean it and start from 0 a new ad
-                d.refresh()
+    for ad in ads_to_upload:
         
-        save_cookies(d, city)
-        d.close()
+        #if no price then prod not available
+        if ad['price'] == None:
+            print(f"this ad:{ad['title']} doesn't has price")
+            continue
+        try:
+            print('---uploading: ', ad['title'])
+
+            upload_ad(d, ad, city)            
+
+        except Exception as e:
+            recordItemNotUploaded(ad, city)
+            print('---------EXCEPTION UPLOADING AN AD!: ', e)
+            traceback.print_exc()
+            print('going to refresh the page to start a fresh new ad')
+            sleep(8)
+            #refresh page to clean it and start from 0 a new ad
+            d.refresh()
+    
+    # save_cookies(d, city)
+    d.close()
+
+def main():
+
+    headless = True
+    a = Process(target=run, args=(0, headless))
+    b = Process(target=run, args=(1, headless))
+    c = Process(target=run, args=(2, headless))
+    
+    a.start()
+    sleep(1)
+    b.start()
+    sleep(1)
+    c.start()
+    
+    a.join()
+    b.join()
+    c.join()
+
+    # #test one in isolated way, without headless
+    # headless = False
+    # run(2, headless)
+
+    print(f'finish time in {perf_counter()} secs')
 
 
 if __name__ == "__main__":  
-    run()
+    main()
 
 
 
