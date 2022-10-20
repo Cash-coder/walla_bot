@@ -44,6 +44,7 @@ def set_gecko_driver_2():
     WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.NAME, "q"))).send_keys("💩")
 
 
-set_gecko_driver_2()
+# set_gecko_driver_2()
 
-'https://stackoverflow.com/questions/69571950/deprecationwarning-firefox-profile-has-been-deprecated-please-pass-in-an-optio'
+import time
+
